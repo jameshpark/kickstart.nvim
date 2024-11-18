@@ -190,6 +190,16 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Keybinds to make INSERT mode text navigation and manipulation like native macOS
+vim.keymap.set('i', '', '<C-o>d^x', { desc = 'Clear the text from the cursor to the beginning of the line' })
+vim.keymap.set('i', '', '<C-o>d$', { desc = 'Clear the text from the cursor to the end of the line' })
+vim.keymap.set('i', '<M-C-H>', '<C-o>db', { desc = 'Clear the text from the cursor to the word' })
+vim.keymap.set('i', '<M-d>', '<C-o>de', { desc = 'Clear the text from the cursor to the next word' })
+vim.keymap.set('i', '', '<C-o>^', { desc = 'Move the cursor to the beginning of the line' })
+vim.keymap.set('i', '', '<C-o>$', { desc = 'Move the cursor to the end of the line' })
+vim.keymap.set('i', '<M-b>', '<C-o>b', { desc = 'Move the cursor to the previous word' })
+vim.keymap.set('i', '<M-f>', '<C-o>w', { desc = 'Move the cursor to the next word' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
