@@ -970,5 +970,11 @@ require('lazy').setup({
   },
 })
 
+-- Configs that depend on the presence of certain plugins above
+-- Enable Treesitter-based folding
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.wo.foldlevel = 99 -- Ensures all folds are open when initially opening a file
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
