@@ -200,6 +200,9 @@ vim.keymap.set('i', '', '<C-o>$', { desc = 'Move the cursor to the end of the l
 vim.keymap.set('i', '<M-b>', '<C-o>b', { desc = 'Move the cursor to the previous word' })
 vim.keymap.set('i', '<M-f>', '<C-o>w', { desc = 'Move the cursor to the next word' })
 
+require 'custom.settings'
+require 'custom.remap'
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
