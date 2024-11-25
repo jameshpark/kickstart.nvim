@@ -1,4 +1,6 @@
+-- Set <space> as the leader key
 vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 -- Move visual selection up/down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv ")
