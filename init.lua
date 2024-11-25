@@ -83,6 +83,8 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
+require 'custom.remap'
+require 'custom.settings'
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -191,9 +193,6 @@ vim.keymap.set('i', '', '<C-o>^', { desc = 'Move the cursor to the beginning of
 vim.keymap.set('i', '', '<C-o>$', { desc = 'Move the cursor to the end of the line' })
 vim.keymap.set('i', '<M-b>', '<C-o>b', { desc = 'Move the cursor to the previous word' })
 vim.keymap.set('i', '<M-f>', '<C-o>w', { desc = 'Move the cursor to the next word' })
-
-require 'custom.settings'
-require 'custom.remap'
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
