@@ -631,7 +631,7 @@ require('lazy').setup({
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        -- r = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -655,6 +655,29 @@ require('lazy').setup({
             },
           },
         },
+        -- basedpyright = {},
+        bashls = {
+          filetypes = { 'sh', 'zsh' },
+        },
+        -- eslint = {}, -- javascript/typescript linter
+        -- gopls = {},
+        -- helm_ls = {},
+        -- hls = {}, -- haskell
+        -- html = {},
+        java_language_server = {},
+        jsonls = {},
+        kotlin_language_server = {},
+        marksman = {}, -- markdown
+        -- postgres_lsp = {},
+        -- protols = {}, -- protobuf
+        -- pylyzer = {},
+        -- pyright = {},
+        -- rust_analyzer = {},
+        sqlls = {}, -- postgres, mysql, sqlite
+        -- terraformls = {},
+        ts_ls = {}, -- typescript/javascript
+        -- vacuum = {}, -- openapi/swagger linter
+        yamlls = {},
       }
 
       -- Ensure the servers and tools above are installed
